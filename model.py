@@ -1,5 +1,6 @@
 import torch
-#%%
+
+
 class DoubleConv(torch.nn.Module):
     def __init__(self, in_channels, out_channels):
         super().__init__()
@@ -11,7 +12,8 @@ class DoubleConv(torch.nn.Module):
 
     def forward(self, X):
         return self.step(X)
-#%%
+
+
 class UNet(torch.nn.Module):
     def __init__(self):
         super().__init__()
